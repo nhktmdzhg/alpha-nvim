@@ -782,6 +782,7 @@ function alpha.setup(config)
         pattern = "*",
         nested = true,
         callback = function()
+            vim.fn.system("fcitx5-remote -c")
             if config.opts.autostart then
                 alpha.start(true, config)
             end
